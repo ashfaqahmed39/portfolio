@@ -14,6 +14,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+    /* Expandable "Learn more" content */
+    .more-content{display:none;margin-top:12px;padding:10px;border-left:3px solid #00eeff;background:rgba(0,0,0,0.02)}
+    .more-content.show{display:block}
+    .more-content ul{margin:0;padding-left:18px}
+    .more-content li{margin-bottom:6px}
   </style>
 </head>
 
@@ -136,26 +141,47 @@
                 <div class="services-list">
                     <div>
                         <i class='bx bx-bug' style='color:#00eeff'></i>
-                        <h2>Software Testing</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec mauris vel lorem
-                            varius elementum. Proin et tincidunt erat, at bibendum dui.</p>
-                        <a href="#" class="read">Learn more</a>
+                        <h2>Manual QA & Exploratory Testing</h2>
+                            <p>I test features like a real user and find edge cases before customers do. You’ll get clear bug reports, strong coverage, and confident releases.</p>
+                            <a href="#" class="read learn-more" data-target="service1-more">Learn more</a>
+                            <div id="service1-more" class="more-content" aria-hidden="true">
+                                <strong>What I deliver</strong>
+                                <ul>
+                                    <li>Test scenarios, test cases, and checklists</li>
+                                    <li>Exploratory testing + risk-based coverage</li>
+                                    <li>High-quality bug reporting with steps, evidence, and severity</li>
+                                </ul>
+                            </div>
                     </div>
                     <div>
                         <i class='bx bx-crop' style='color:#00eeff'></i>
-                        <h2>Web Development</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec mauris vel lorem
-                            varius elementum.
-                            Proin et tincidunt erat, at bibendum dui.</p>
-                        <a href="#" class="read">Learn more</a>
+                        <h2>Test Automation</h2>
+                        <p>I automate repetitive tasks and create robust test scripts to ensure software quality. You'll get faster feedback, reduced manual effort, and reliable regression testing.</p>
+                        <a href="#" class="read learn-more" data-target="service2-more">Learn more</a>
+                        <div id="service2-more" class="more-content" aria-hidden="true">
+                            <strong>What I deliver</strong>
+                            <ul>
+                                <li>Automated test scripts in js/Java</li>
+                                <li>CI/CD integration for automated testing</li>
+                                <li>Test framework setup and maintenance</li>
+                                <li>Ui automation , web automation , app automation</li>
+                            </ul>
+                        </div>
                     </div>
                     <div>
                         <i class='bx bx-code' style='color:#00eeff'></i>
 
-                        <h2>UI/UX Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec mauris vel lorem
-                            varius elementum. Proin et tincidunt erat, at bibendum dui.</p>
-                        <a href="#" class="read">Learn more</a>
+                        <h2>API Testing & Performance Testing</h2>
+                        <p>I test APIs and performance to ensure your software is fast, reliable, and scalable. You'll get comprehensive API testing and performance analysis to identify bottlenecks and optimize your system.</p>
+                        <a href="#" class="read learn-more" data-target="service3-more">Learn more</a>
+                        <div id="service3-more" class="more-content" aria-hidden="true">
+                            <strong>What I deliver</strong>
+                            <ul>
+                                <li>API testing with Postman, REST Assured</li>
+                                <li>Performance testing with JMeter, Locust</li>
+                                <li>Performance analysis and optimization recommendations</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,22 +212,22 @@
                 <div class="work">
                     <img src="Images/7.jpg">
                     <div class="layer">
-                        <h3>Tutorts Point</h3>
-                        <p></p>
-                        <a href="https://github.com/AshfaqSourav/tutor_point"><i class='bx bx-link-external'></i></a>
+                        <h3>Playwright UI Automation Framework</h3>
+                        <p>End-to-end UI automation with Page Object Model, reusable login states, and stable locators. Includes reports and CI-ready execution.</p>
+                        <a href="https://github.com/ashfaqahmed39/visual-regression-testing-boilerplate-customFramework"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="Images/6.jpg">
                     <div class="layer">
-                        <h3>Hostel Solution App</h3>
-                        <p></p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
+                        <h3>Performance Testing(Locust)</h3>
+                        <p>Performance testing with Locust, including load simulation and analysis.</p>
+                        <a href="https://github.com/ashfaqahmed39/loadTest-Locust-python"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
                 
             </div>
-            <a href="#portfolio" class="btn-box1">See More</a>
+            <a href="https://github.com/ashfaqahmed39?tab=repositories" class="btn-box1" target="_blank" rel="noopener noreferrer">See More</a>
             
         </div>
         
@@ -218,7 +244,7 @@
                         <a href="https://www.instagram.com/" style="--i:8"><i class='bx bxl-instagram'></i></a>
                         <a href="#" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
                         <a href="https://bd.linkedin.com/" style="--i:10"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://twitter.com/" style="--i:11"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://x.com/ashfaqahmed3339?s=21" style="--i:11"><i class='bx bxl-twitter'></i></a>
                     </div>
                     <a href="Images/Ashfaq_CV.pdf" download class="btn-box">Download CV</a>
                 </div>
